@@ -34,5 +34,10 @@ public class TestFactorizer {
   public void testThree() {
     assertEquals("Prime factors for 60: 2, 3, 5.", factorizer.primeFactors(60));
   }
+
+  @Test
+  public void testFour() {
+    assertEquals("null", factorizer.primeFactors(-10));
+  }
   
 }
