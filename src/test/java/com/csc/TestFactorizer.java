@@ -40,4 +40,28 @@ public class TestFactorizer {
     assertEquals("null", factorizer.primeFactors(-10));
   }
   
+  @Test
+  public void testFive() {
+    assertEquals(true, factorizer.isComposite(36));
+  }
+
+  @Test
+  public void testSix() {
+    assertEquals(true, factorizer.isComposite(12));
+  }
+
+  @Test
+  public void testSeven() {
+    assertEquals(false, factorizer.isComposite(17));
+  }
+
+  @Test
+  public void testEight() {
+    assertEquals(false, factorizer.isComposite(1));
+  }
+
+  @Test
+  public void testNine() {
+    assertEquals(false, factorizer.isComposite(0));
+  }
 }

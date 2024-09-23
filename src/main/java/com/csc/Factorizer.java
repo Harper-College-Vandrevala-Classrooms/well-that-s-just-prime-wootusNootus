@@ -58,4 +58,9 @@ public class Factorizer
 
     return true; // no factors found, must be prime
   }
+
+  public boolean isComposite(int number)
+  {
+    return (number > 1 && !isPrime(number));
+  }
 }
